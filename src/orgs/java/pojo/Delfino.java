@@ -1,8 +1,9 @@
 package orgs.java.pojo;
 
 import orgs.java.pojo.abs.Animale;
+import orgs.java.pojo.inter.INuotante;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements INuotante{
 
 	public Delfino(String type, int paws) {
 		super(type, paws);
@@ -18,4 +19,8 @@ public class Delfino extends Animale {
 		System.out.println("Pesce");
 	}
 
+	@Override
+	public void faiNuotare() {
+		System.out.println("Sto nuotando!!!");
+	}
 }

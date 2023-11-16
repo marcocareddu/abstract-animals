@@ -21,7 +21,7 @@ public abstract class Animale {
 //	Abtrasct methods
 	public abstract void verso();
 	public abstract void mangia();
-	
+
 //	Methods
 	public void dormi() {
 		System.out.println("Zzz");

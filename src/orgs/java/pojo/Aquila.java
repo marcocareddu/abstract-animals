@@ -1,8 +1,9 @@
 package orgs.java.pojo;
 
 import orgs.java.pojo.abs.Animale;
+import orgs.java.pojo.inter.IVolante;
 
-public class Aquila extends Animale{
+public class Aquila extends Animale implements IVolante{
 
 	public Aquila(String type, int paws) {
 		super(type, paws);
@@ -16,5 +17,10 @@ public class Aquila extends Animale{
 	@Override
 	public void mangia() {
 		System.out.println("Carne");
+	}
+	
+	@Override
+	public void faiVolare() {
+		System.out.println("Sto volando!!!");
 	}
 }

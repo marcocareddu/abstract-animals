@@ -24,5 +24,10 @@ public class Main {
 			System.out.println("Il " + animali[i].getClass() + " mangia: ");
 			animali[i].mangia();
 		}
+		
+//		Interfaces
+		aqui1.faiVolare();
+		pass1.faiVolare();
+		delf1.faiNuotare();
 	}
 }
