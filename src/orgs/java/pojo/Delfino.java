@@ -20,7 +20,7 @@ public class Delfino extends Animale implements INuotante{
 	}
 
 	@Override
-	public void faiNuotare() {
+	public void nuota() {
 		System.out.println("Sto nuotando!!!");
 	}
 }

@@ -1,6 +1,8 @@
 package orgs.java.pojo;
 
 import orgs.java.pojo.abs.Animale;
+import orgs.java.pojo.inter.INuotante;
+import orgs.java.pojo.inter.IVolante;
 
 public class Main {
 
@@ -24,10 +26,14 @@ public class Main {
 			System.out.println("Il " + animali[i].getClass() + " mangia: ");
 			animali[i].mangia();
 		}
-		
-//		Interfaces
-		aqui1.faiVolare();
-		pass1.faiVolare();
-		delf1.faiNuotare();
+	}
+	
+	public static void faiVolare(IVolante pass1) {
+		pass1.vola();
+	}
+	
+	public static void faiNuotare(INuotante delf1) {
+		delf1.nuota();
 	}
 }
+
